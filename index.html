@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://libs.cdnjs.net/font-awesome/5.15.3/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="digitalClock">
+        <h1 id="day">MON</h1>
+        <h1 id="hour">05</h1>
+        <h1 id="bar1">/</h1>
+        <h1 id="minute">21</h1>
+        <h1 id="bar2">/</h1>
+        <h1 id="ampm">PM</h1>
+    </div>
+    <div class="container">
+        <div class="image fade">
+            <img src="/img/PorsheCarrera.jpg" alt="" width="100%">
+        </div>
+        <div class="image fade">
+            <img src="/img/Lam4.jpg" alt="" width="100%">
+        </div>
+        <div class="image fade">
+            <img src="/img/5SeriesBmw.jpg" alt="" width="100%">
+        </div>
+        <div class="image fade">
+            <img src="/img/LilUziR8.jpg" alt="" width="100%">
+        </div>
+        <div class="image fade">
+            <img src="/img/Sakura.jpg" alt="" width="100%">
+        </div>
+        <div class="image fade">
+            <img src="/img/Space.jpg" alt="" width="100%">
+        </div>
+        <div class="image fade">
+            <img src="/img/Shelby.jpg" alt="" width="100%">
+        </div>
+        <div class="image fade">
+            <img src="/img/Itachi.jpg" alt="" width="100%">
+        </div>
+        <i id="prev" onclick="show_image(-1)" class="fa fa-backward" aria-hidden="true"></i>
+        <i id="next" onclick="show_image(1)" class="fa fa-forward" aria-hidden="true"></i>
+         <div class="dots">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>  
+         </div>
+         <button onclick="changeColor()" type="button" class="btn btn-primary">Background</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

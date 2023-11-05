@@ -1,0 +1,125 @@
+.digitalClock {
+    width: fit-content;
+    margin: auto;
+    padding: 8px;
+    border-radius: 2px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.1);
+   }
+   .digitalClock h1 {
+       display: inline-block;
+       margin: 0 10px;
+       font-weight: bold;
+       font-size: 3rem;
+   }
+.container {
+    width: 70%;
+    height: 100vh;
+    margin: -10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.image {
+    display: none ;
+}
+#prev {
+    position: absolute;
+    color: white;
+    top: 43%;
+    left: 0;
+    cursor: pointer;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transform: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+#next {
+    position: absolute;
+    color: white;
+    top: 43%;
+    right: 0;
+    cursor: pointer;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transform: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+#prev:hover, #next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.dots {
+    text-align: center;
+    margin-top: 0.5%;
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #bbb ;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 2px;
+    transition: background-color 0.6s ease;
+}
+.active {
+    background-color: #717171;
+}
+.fade {
+   animation: fade 1.5s; 
+}
+button {
+    background-color: rgba(0, 0, 255, 0.763);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+   margin: 5px 0px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: rgba(0, 0, 255, 0.604);
+  }
+  button:active {
+    background-color: rgba(0, 0, 255, 0.604);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+@keyframes fade {
+    from{opacity: .4}
+    to {opacity: 1}
+}
+@media (max-width:900px) {
+    .container {
+    width: 80%;
+    }
+}
+@media (max-width:768px) {
+    .digitalClock {
+        text-align: center;
+        width: 100%; 
+    }
+    .container {
+        width: 100%;
+        }
+    .digitalClock h1 {
+    font-size: 2rem;
+    }
+}
+@media (max-width:480px) {
+    #bar1, #bar2 {
+        display: none;
+    }
+    .digitalClock h1 {
+    font-size: 1.4rem;
+   }
+}
